@@ -1,0 +1,3 @@
+inkscape-0.92.4-x64.exe
+Inkscape-0.48.0-1.exe
+https://wiki.inkscape.org/wiki/index.php/Release_notes/0.48

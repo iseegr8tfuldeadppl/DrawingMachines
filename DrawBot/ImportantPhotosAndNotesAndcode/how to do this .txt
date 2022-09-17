@@ -1,0 +1,29 @@
+FOR universal gcode sender jar to run u must install java 7 otherwise u'll get random crashes during connection to the arduino
+
+tip: if u're using the arduino cnc shield
+pls reverse the pins in grbl library file
+the step and direction pins are flipped
+here C:\Users\kream\Documents\Arduino\libraries\grbl-servo-master\cpu_map\cpu_map_atmega328p.h
+
+also servo angles must be changed at RC_SERVO_SHORT and RC_SERVO_LONG and RC_SERVO_INVERT
+u gotta find the angle in terms of timer ticker just read the comments in the same line as those in the file
+C:\Users\kream\Documents\Arduino\libraries\grbl-servo-master\spindle_control.c
+
+the RC_SERVO_SHORT is the minimum value for the servo to be free to go into
+the RC_SERVO_SHORT is the maximum value for the servo to be free to go into
+and the range is 15 to 32, so choose ur values between these
+i still have to use M3 S0 and M3 S180 to change pen positions idk why M3 and M5 don't work
+
+1. 3d print the parts
+2. don't screw the center top/bottom, just use black zipties
+to keep them together
+3. use 3mm screws everywhere u'll findem in boullonerie store
+near dar el beida
+4. get reverse springs that u have to pull btw, get MG90 for more
+strength
+5. connect only enable pins to Pin 8 arduino
+6. u'll struggle to modify M05 servo's angle so
+just use the python code called drawing_machine_servo_angles_updater.py
+to replace the pen angles in resulting inkscape files
+7. jsut use the inkscape preinstalled files that u keep inside this folder
+u'll avoid errors that way
