@@ -1,3 +1,11 @@
+your inkscape document must be x4 the maximum width and height of the drawing machine
+also make sure to add a safety to drawing machine where maximum x and y can be set, just check at the bottom of the $$ menu, default i think is 200mm
+last maximums i had on machine were 6.5mm and 6.5mm (ik weird)
+
+
+
+follow every step in the description here https://www.thingiverse.com/thing:2349232
+
 FOR universal gcode sender jar to run u must install java 7 otherwise u'll get random crashes during connection to the arduino
 
 tip: if u're using the arduino cnc shield
